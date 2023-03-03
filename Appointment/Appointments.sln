@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Appointments", "Appointments\Appointments.csproj", "{B91E8152-EDD3-4B04-A36A-3B74E792B5AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9378F31-425C-4C0E-BE05-289BA773A784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B91E8152-EDD3-4B04-A36A-3B74E792B5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91E8152-EDD3-4B04-A36A-3B74E792B5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91E8152-EDD3-4B04-A36A-3B74E792B5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91E8152-EDD3-4B04-A36A-3B74E792B5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CF81C2B-EFF4-46AF-8AE8-9DA40B818708}
+	EndGlobalSection
+EndGlobal
