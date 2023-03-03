@@ -80,11 +80,11 @@ namespace Appointments.Manager
 
         }
 
-        public async Task<Response> FindAppointmentByName(string name)
+        public async Task<Response> FindAppointmentByName(string title)
         {
             try { 
             List<Appointment> appointments = new(
-              await MongoRepository.FindAllAsync<Appointment>(x =>x.title.ToLower().StartsWith(name.ToLower()))
+              await MongoRepository.FindAllAsync<Appointment>(x =>x.title.ToLower().StartsWith(title.ToLower()))
                 );
 
             List<AppointmentsDTO> model = mapper.Map<List<Appointment>, List<AppointmentsDTO>>(appointments);

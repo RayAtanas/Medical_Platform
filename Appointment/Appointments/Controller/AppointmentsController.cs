@@ -50,14 +50,14 @@ namespace Appointments.Controller
         }
 
         [HttpGet]
-        [Route("getAppointmentByName/{name}")]
+        [Route("getAppointmentByName/{title}")]
 
         public async Task<IActionResult> getAppointmentByName(
-                string name
+                string title
             )
         {
 
-            var result = await appointmentsManager.FindAppointmentByName(name);
+            var result = await appointmentsManager.FindAppointmentByName(title);
             return StatusCode(result.HttpStatus, result);
 
         }
