@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  medicalplatform:
+    image: medicalplatform:dev
+    container_name: Medical_Platform
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Medical Platform"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+<<<<<<< HEAD
+      - D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\Medical Platform:/app
+      - D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform:/src
+      - C:\Users\Ray Atanas\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\Ray Atanas\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+=======
+      - D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\Medical Platform:C:\app
+      - D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform:C:\src
+      - C:\Users\Ray Atanas\onecoremsvsmon\17.3.10630.1389:C:\remote_debugger:ro
+      - C:\Users\Ray Atanas\.nuget\packages\:c:\.nuget\packages:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+>>>>>>> Pharmacies
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Medical Platform.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

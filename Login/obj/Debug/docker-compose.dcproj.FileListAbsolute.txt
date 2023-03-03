@@ -1,0 +1,44 @@
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.deps.json
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.runtimeconfig.json
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\appsettings.Development.json
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\appsettings.json
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.exe
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Driver.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Driver.Core.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Newtonsoft.Json.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Bson.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\DnsClient.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\SharpCompress.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\ZstdSharp.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Snappier.dll
+D:\Medical platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.pdb
+D:\Medical platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\Medical platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Medical platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\appsettings.Development.json
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\appsettings.json
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.deps.json
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.runtimeconfig.json
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.exe
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Driver.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Driver.Core.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Newtonsoft.Json.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Bson.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\DnsClient.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\SharpCompress.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\ZstdSharp.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Snappier.dll
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\bin\Debug\Medical Platform.pdb
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CopyComplete
