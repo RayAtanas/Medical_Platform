@@ -18,6 +18,10 @@
         public int? attempt { get; set; }
 
         public DateTime timeBlocked { get; set; }
+
+        public Dictionary<string, string>? medical_Record { get; set; }
+        
+
     }
 
 }

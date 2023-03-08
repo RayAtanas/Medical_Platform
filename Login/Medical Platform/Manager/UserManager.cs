@@ -91,6 +91,10 @@ namespace Medical_Platform.Manager
              
                     Email = user.email,
                     Username = user.username,
+                    FirstName = user.firstName,
+                    LastName = user.lastName,
+                    PhoneNumber = user.phoneNumber,
+                    Medical_Record = user.medical_Record
                 },
 
                 HttpStatus = 200,
@@ -158,8 +162,11 @@ namespace Medical_Platform.Manager
             {
                 HttpStatus = 200,
 
-                Data = newuser.Id
-
+                Data = 
+                
+                     newuser.email,
+                     
+                
 
             };
 

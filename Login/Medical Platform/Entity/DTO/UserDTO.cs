@@ -24,5 +24,8 @@ namespace Medical_Platform.DTO
 
         [JsonProperty("phonenumber")]
         public string? PhoneNumber { get; set; }
+
+        [JsonProperty("medicalRecord")]
+        public Dictionary<string, string>? Medical_Record { get; set; }
     }
 }
