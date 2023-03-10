@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jH8lwoZU+ePjT+OKR+sUIrs/OuQVc9111Si3uynZgFB9cJoHcbKL3MU8ns+5mV0y9vKW0ekuUY6Yt/yTubZPDw==",
+  "dgSpecHash": "1nVll3mnL/p9u+X9WfCqEICKPvj4GL6sSp2yjNDdkNObySIl57rxzoPuQjUpwQ/VZh0OgLVOY1d7fiKLdnauzQ==",
   "success": true,
   "projectFilePath": "D:\\MedicalPlatform\\Login\\Medical Platform\\Medical Platform.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ray Atanas\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Ray Atanas\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Ray Atanas\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.12\\microsoft.aspnetcore.jsonpatch.6.0.12.nupkg.sha512",
     "C:\\Users\\Ray Atanas\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.12\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.12.nupkg.sha512",
