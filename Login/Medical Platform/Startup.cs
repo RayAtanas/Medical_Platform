@@ -4,7 +4,7 @@ using AutoMapper;
 using Medical_Platform.Controller;
 using Medical_Platform.Database;
 using Medical_Platform.Manager;
-using Medical_Platform.Mapper;
+
 using Medical_Platform.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -37,14 +37,14 @@ namespace Medical_Platform
             services.AddScoped<Context>();
             services.AddScoped<UserRepository>();
             services.AddScoped<UserManager>();
-            var mapperConfig = new MapperConfiguration(mc =>
+         /*   var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new UserMapper());
             });
 
             IMapper mapper = mapperConfig.CreateMapper();
 
-            services.AddSingleton(mapper);
+            services.AddSingleton(mapper);*/
 
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
