@@ -27,13 +27,21 @@ def main():
     rfc.fit(X, y)
 
     # Get input symptoms from user
-    input_symptoms = input("Enter your symptoms separated by commas: ").split(',')
+    input_symptoms = input("Enter your symptoms separated by commas: ")
+
+    # Check if input is not empty and if all input symptoms are valid
+    if not input_symptoms:
+        print("Error: Empty input, please enter your symptoms.")
+        return
+    for symptom in input_symptoms.split(','):
+        if 'Symptom_' + symptom not in symptom_names:
+            print(f"Error: '{symptom}' is not a valid symptom, please check your input.")
+            return
 
     # Create an input vector with zeros and ones corresponding to the presence of each symptom
     input_values = np.zeros(X.shape[1])
-    for symptom in input_symptoms:
-        if 'Symptom_' + symptom in symptom_names:
-            input_values[symptom_names.index('Symptom_' + symptom)] = 1
+    for symptom in input_symptoms.split(','):
+        input_values[symptom_names.index('Symptom_' + symptom)] = 1
 
     # Make predictions on the input symptoms
     predictions = rfc.predict([input_values])
