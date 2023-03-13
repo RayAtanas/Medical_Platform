@@ -7,7 +7,7 @@
 
         public bool isBlocked = false;
 
-        public string? username { get; set; }
+        public string? userName { get; set; }
 
         public string? firstName { get; set; }
 
@@ -17,9 +17,15 @@
 
         public int? attempt { get; set; }
 
+        public string? gender { get; set; }
+
+        public string? nationality { get; set; }
+
+        public string? emergencyContact { get; set; }
+
         public DateTime timeBlocked { get; set; }
 
-        public Dictionary<string, string>? medical_Record { get; set; }
+        public Dictionary<string,List<string>>? medical_Record { get; set; }
         
 
     }

@@ -13,19 +13,19 @@ namespace Medical_Platform.DTO
         [JsonProperty("password")]
         public string Password { get; set; }
 
-        [JsonProperty("username")]
+        [JsonProperty("userName")]
         public string? Username { get; set; }
 
-        [JsonProperty("firstname")]
+        [JsonProperty("firstName")]
         public string? FirstName { get; set; }
 
-        [JsonProperty("lastname")]
+        [JsonProperty("lastName")]
         public string? LastName { get; set; }
 
-        [JsonProperty("phonenumber")]
+        [JsonProperty("phoneNumber")]
         public string? PhoneNumber { get; set; }
 
         [JsonProperty("medicalRecord")]
-        public Dictionary<string, string>? Medical_Record { get; set; }
+        public List<string>? Medical_Record { get; set; }
     }
 }

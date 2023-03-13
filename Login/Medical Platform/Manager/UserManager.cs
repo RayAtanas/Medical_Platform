@@ -162,8 +162,14 @@ namespace Medical_Platform.Manager
             {
                 HttpStatus = 200,
 
-                Data = newuser.Id,
-                     
+                Data =new {newuser.Id,
+                    newuser.email,
+                    newuser.firstName,
+                    newuser.phoneNumber,
+                    newuser.lastName,
+                    newuser.medical_Record
+                    
+                }
                 
 
             };
