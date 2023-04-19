@@ -294,3 +294,5 @@ obj/
 *.wasm
 *.wat
 *.xhtml
+
+appsettings.json

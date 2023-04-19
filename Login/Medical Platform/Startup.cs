@@ -4,7 +4,8 @@ using AutoMapper;
 using Medical_Platform.Controller;
 using Medical_Platform.Database;
 using Medical_Platform.Manager;
-
+using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Tokens;
 using Medical_Platform.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -37,14 +38,15 @@ namespace Medical_Platform
             services.AddScoped<Context>();
             services.AddScoped<UserRepository>();
             services.AddScoped<UserManager>();
-         /*   var mapperConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new UserMapper());
-            });
+           
+            /*   var mapperConfig = new MapperConfiguration(mc =>
+               {
+                   mc.AddProfile(new UserMapper());
+               });
 
-            IMapper mapper = mapperConfig.CreateMapper();
+               IMapper mapper = mapperConfig.CreateMapper();
 
-            services.AddSingleton(mapper);*/
+               services.AddSingleton(mapper);*/
 
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

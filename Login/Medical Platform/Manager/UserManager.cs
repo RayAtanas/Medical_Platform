@@ -5,6 +5,7 @@ using Medical_Platform.Repository;
 using MongoDB.Driver;
 using System.Net;
 using System.Text.RegularExpressions;
+using static System.Net.WebRequestMethods;
 
 namespace Medical_Platform.Manager
 {
@@ -88,13 +89,19 @@ namespace Medical_Platform.Manager
             {
                 Data = new UserDTO()
                 {
-             
+                    
                     Email = user.email,
-                    Username = user.username,
+                    UserName = user.username,
                     FirstName = user.firstName,
                     LastName = user.lastName,
                     PhoneNumber = user.phoneNumber,
-                    Medical_Record = user.medical_Record
+                    Medical_Record = user.medical_Record,
+                    Gender = user.gender,
+                    EmergencyContact = user.emergencyContact,
+                    Nationality = user.nationality,
+                    DateOfBirth = user.dateOfBirth,
+                    
+                    
                 },
 
                 HttpStatus = 200,
@@ -132,7 +139,7 @@ namespace Medical_Platform.Manager
                 {"(.*[a-z].*)", "Password must contain at least one lowercase characer" },
                 {"(.*[0-9].*)", "Password must contain at least number" },
                 {"\\b\\w{12,}", "Password must be at least 12 characters long" },
-
+                {"(.*[!@#$%^&*()_+\\-=[\\]{};':\"\\\\|,.<>\\/?].*)", "Password must contain at least one special character"}
 
             };
 
@@ -167,7 +174,11 @@ namespace Medical_Platform.Manager
                     newuser.firstName,
                     newuser.phoneNumber,
                     newuser.lastName,
-                    newuser.medical_Record
+                    newuser.medical_Record,
+                    newuser.dateOfBirth,
+                    newuser.gender,
+                    newuser.nationality,
+                    newuser.emergencyContact
                     
                 }
                 
@@ -186,13 +197,24 @@ namespace Medical_Platform.Manager
 
                 Id = Guid.NewGuid().ToString(),
 
-                username = userDto.Username,
+                username = userDto.UserName,
 
                 firstName = userDto.FirstName,
 
                 lastName = userDto.LastName,
 
-                phoneNumber = userDto.PhoneNumber
+                phoneNumber = userDto.PhoneNumber,
+
+                medical_Record = userDto.Medical_Record,
+
+                dateOfBirth = userDto.DateOfBirth,
+
+                gender = userDto.Gender,
+
+                nationality = userDto.Nationality,
+
+                 emergencyContact = userDto.EmergencyContact
+
             };
         }
 

@@ -42,3 +42,26 @@ D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical P
 D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\Medical_platform\Medical_Platform\Medical_Platform\Medical Platform\Medical Platform\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\MedicalPlatform\Login\bin\Debug\Medical Platform.dll
+D:\MedicalPlatform\Login\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\MedicalPlatform\Login\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\MedicalPlatform\Login\bin\Debug\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\MedicalPlatform\Login\bin\Debug\MongoDB.Driver.dll
+D:\MedicalPlatform\Login\bin\Debug\MongoDB.Driver.Core.dll
+D:\MedicalPlatform\Login\bin\Debug\Newtonsoft.Json.dll
+D:\MedicalPlatform\Login\bin\Debug\MongoDB.Bson.dll
+D:\MedicalPlatform\Login\bin\Debug\Microsoft.AspNetCore.JsonPatch.dll
+D:\MedicalPlatform\Login\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\MedicalPlatform\Login\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\MedicalPlatform\Login\bin\Debug\DnsClient.dll
+D:\MedicalPlatform\Login\bin\Debug\SharpCompress.dll
+D:\MedicalPlatform\Login\bin\Debug\ZstdSharp.dll
+D:\MedicalPlatform\Login\bin\Debug\Snappier.dll
+D:\MedicalPlatform\Login\bin\Debug\Medical Platform.pdb
+D:\MedicalPlatform\Login\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\MedicalPlatform\Login\bin\Debug\Medical Platform.deps.json
+D:\MedicalPlatform\Login\bin\Debug\Medical Platform.runtimeconfig.json
+D:\MedicalPlatform\Login\bin\Debug\appsettings.Development.json
+D:\MedicalPlatform\Login\bin\Debug\appsettings.json
+D:\MedicalPlatform\Login\bin\Debug\Medical Platform.exe
+D:\MedicalPlatform\Login\bin\Debug\AWSSDK.Core.dll
