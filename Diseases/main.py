@@ -1,56 +1,34 @@
-import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Dense
+from sklearn.metrics import accuracy_score
 
+# update the path of the dataset file
+df = pd.read_csv('D:\Dataset\dataset.csv')
 
-def main():
-    # Load the dataset
-    data = pd.read_csv('D:\Dataset\Diseases Symptoms.csv')
+# create column names with 'Symptom_' prefix and a number from 1 to 17
+symptom_cols = ['Symptom_' + str(i) for i in range(1, 18)]
 
-    # Create a list of all the unique symptoms
-    all_symptoms = [col for col in data.columns if col != 'Disease']
+# replace the 'Symptom' column with the new columns
+X = pd.concat([pd.get_dummies(df.drop(['Symptom', 'Disease'], axis=1)), pd.get_dummies(df['Symptom']).rename(columns=dict(zip(df['Symptom'].unique(), symptom_cols)))], axis=1)
 
-    # Convert the symptom columns to dummy variables
-    data = pd.get_dummies(data, columns=all_symptoms)
+# create a new target variable that corresponds to the 'Disease' column
+y = pd.get_dummies(df['Disease'])
 
-    # Get the list of symptom dummy variable names
-    symptom_names = [col for col in data.columns if col.startswith('Symptom_')]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2)
 
-    # Split the dataset into features and labels
-    X = data[symptom_names].values
-    y = data['Disease'].values
+model = Sequential()
+model.add(Dense(units=32, activation='relu', input_dim=len(X_train.columns)))
+model.add(Dense(units=64, activation='relu'))
+model.add(Dense(units=1, activation='sigmoid'))
 
-    # Create a random forest classifier with 100 trees
-    rfc = RandomForestClassifier(n_estimators=100)
+model.compile(loss='binary_crossentropy', optimizer='sgd', metrics='accuracy')
 
-    # Train the random forest classifier
-    rfc.fit(X, y)
+model.fit(X_train, y_train, epochs=200, batch_size=32)
 
-    # Get input symptoms from user
-    input_symptoms = input("Enter your symptoms separated by commas: ")
+y_hat = model.predict(X_test)
+y_hat = [0 if val < 0.5 else 1 for val in y_hat]
 
-    # Check if input is not empty and if all input symptoms are valid
-    if not input_symptoms:
-        print("Error: Empty input, please enter your symptoms.")
-        return
-    for symptom in input_symptoms.split(','):
-        if 'Symptom_' + symptom not in symptom_names:
-            print(f"Error: '{symptom}' is not a valid symptom, please check your input.")
-            return
-
-    # Create an input vector with zeros and ones corresponding to the presence of each symptom
-    input_values = np.zeros(X.shape[1])
-    for symptom in input_symptoms.split(','):
-        input_values[symptom_names.index('Symptom_' + symptom)] = 1
-
-    # Make predictions on the input symptoms
-    predictions = rfc.predict([input_values])
-
-    # Get the list of potential diseases
-    potential_diseases = np.unique(y[y == predictions[0]])
-
-    # Print the list of potential diseases
-    print("Potential diseases based on your symptoms:", potential_diseases)
-
-if __name__ == '__main__':
-    main()
+acc = accuracy_score(y_test.values.argmax(axis=1), y_hat)
+print(f"Accuracy: {acc}")
